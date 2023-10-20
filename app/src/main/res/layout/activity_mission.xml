@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MissionActivity">
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_actionPadding="20dp"
+        app:tb_barHeight="45dp"
+        app:tb_dividerColor="@color/xui_config_color_red"
+        app:tb_leftImageResource="@drawable/back"
+        app:tb_sideTextPadding="20dp"
+        app:tb_subTitleText="@string/mission_sub_title_text"
+        app:tb_titleText="@string/mission_title_text"
+        android:id="@+id/mission_activity_title"/>
+
+    <fragment
+        android:id="@+id/mission_fragment"
+        android:name="com.example.company_oa_application.fragment.MissionItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp" />
+</RelativeLayout>

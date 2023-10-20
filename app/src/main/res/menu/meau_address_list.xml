@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="拨打电话"
+        android:id="@+id/phone"/>
+    <item
+        android:title="发送邮件"
+        android:id="@+id/mail"/>
+
+</menu>

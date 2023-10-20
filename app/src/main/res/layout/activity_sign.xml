@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/sign_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_actionPadding="20dp"
+        app:tb_barHeight="45dp"
+        app:tb_dividerColor="@color/xui_config_color_red"
+        app:tb_leftImageResource="@drawable/back"
+        app:tb_sideTextPadding="20dp"
+        app:tb_subTitleText="@string/sign_sub_title_text"
+        app:tb_titleText="@string/sign_title_text" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/baiduMapView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="false" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/time"
+        android:layout_below="@+id/baiduMapView"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        style="@style/RoundButton.Auto"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        app:rb_radius="15dp"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="50dp"
+        android:text="@string/signButton"
+        android:textColor="@color/xui_btn_blue_normal_color"
+        app:rb_backgroundColor="@color/white"
+        app:rb_borderColor="@color/blueviolet"
+        android:id="@+id/signButton"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"/>
+</RelativeLayout>

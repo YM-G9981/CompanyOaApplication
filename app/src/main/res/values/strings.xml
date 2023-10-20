@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">OAApplication</string>
+    <string name="tab1">主页</string>
+    <string name="tab2">通讯录</string>
+    <string name="tab3">菜单</string>
+    <string name="host">http://1.12.67.203:8080</string>
+    <string name="tab4">个人信息设置</string>
+    <string name="large_text">
+       ands
+    </string>
+    <string name="sign_title_text">签到</string>
+    <string name="sign_sub_title_text">请在上班时间打卡哦</string>
+
+    <string name="news_title_text">新闻</string>
+    <string name="news_sub_title_text">公司发生大事记</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_address_list">AddressList</string>
+    <string name="title_activity_mail">MailActivity</string>
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="signButton">签到</string>
+    <string name="title_activity_show_news">ShowNewsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="announcement_title_text">通知</string>
+    <string name="announcement_sub_title_text">来自管理员发布的通知</string>
+    <string name="title_activity_show_announcement">ShowAnnouncementActivity</string>
+    <string name="mail_list_title_text">内部邮件</string>
+    <string name="mail_list_sub_title_text">查看您与其他员工的邮件往来</string>
+    <string name="title_activity_show_inner_mail">ShowInnerMailActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="add_inner_mail_title_text">添加新的内部邮件</string>
+    <string name="new_inner_mail_tilte_text">新邮件</string>
+    <string name="new_inner_mail_title_text">新邮件</string>
+    <string name="new_inner_mail_summit_text">发送</string>
+    <string name="new_inner_mail_save_text">保存</string>
+    <string name="title_activity_outer_mail">OuterMailActivity</string>
+    <string name="outer_mail_list_title_text">外部邮件</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="mission_sub_title_text">每日工作需完成以下任务</string>
+    <string name="mission_title_text">每日任务</string>
+</resources>

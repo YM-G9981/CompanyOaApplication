@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddNewInnerMailActivity">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/mail_title_bar"
+        android:layout_width="411dp"
+        android:layout_height="68dp"
+        app:tb_actionPadding="20dp"
+        app:tb_barHeight="45dp"
+        app:tb_dividerColor="@color/xui_config_color_red"
+        app:tb_leftImageResource="@drawable/back"
+        app:tb_sideTextPadding="20dp"
+        app:tb_titleText="@string/new_inner_mail_title_text"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/mail_title_bar"
+        android:layout_marginTop="80dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:text="标题"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+            <com.xuexiang.xui.widget.edittext.ClearEditText
+                android:id="@+id/mail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="10"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="邮件内容"
+                android:textSize="20dp"
+                android:height="70dp"
+                android:textAlignment="center"
+                />
+
+            <com.xuexiang.xui.widget.edittext.MultiLineEditText
+                android:id="@+id/mail_context"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="10"
+                app:mlet_contentViewHeight="140dp"
+                app:mlet_isFixHeight="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:textAlignment="center"
+                android:text="发送人"
+                android:textSize="20dp"
+                />
+
+            <com.xuexiang.xui.widget.edittext.ClearEditText
+                android:id="@+id/addresser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:height="40dp"
+                android:focusable="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="3"
+                android:textAlignment="center"
+                android:text="接收人"
+                android:textSize="20dp"
+                />
+            <com.xuexiang.xui.widget.edittext.ClearEditText
+                android:id="@+id/send_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:layout_below="@id/linearLayout">
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        android:id="@+id/summit_button"
+        style="@style/RoundButton.Auto"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/new_inner_mail_summit_text"
+        android:textColor="@color/xui_default_round_btn_white_text"
+        android:textSize="25dp"
+        app:rb_backgroundColor="@color/blue"
+        app:rb_borderColor="@color/white"
+        app:rb_radius="25dp" />
+</LinearLayout>
+</RelativeLayout>
